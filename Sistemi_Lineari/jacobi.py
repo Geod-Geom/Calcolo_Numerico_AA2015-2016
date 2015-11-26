@@ -41,7 +41,7 @@ while (err_K > eps and num_iter < 100):
     # Calcolo della soluzione K
     for i in xrange(N):
         for j in xrange(i):
-            X[i] = A[i][j]*X[j] + X[i]
+            X[i] = A[i][j]*X0[j] + X[i]
         for j in xrange(i+1,N):
             X[i] += A[i][j]*X0[j]
 			
